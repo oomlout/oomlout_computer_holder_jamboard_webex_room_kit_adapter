@@ -180,7 +180,7 @@ def get_base(thing, **kwargs):
     p3["holes"] = "single"
     locs = []
     locs.append([1, 1])
-    locs.append([2, 1])
+    #locs.append([2, 1])
     locs.append([1,2])
     locs.append([2,2])
     locs.append([1,3])
@@ -240,6 +240,22 @@ def get_base(thing, **kwargs):
         p3["pos"] = pos1
         oobb_base.append_full(thing,**p3)
 
+        #extra cube 50 x 60 at 5,-50
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = f"oobb_cube"
+        wid = 50
+        hei = 60
+        dep = depth
+        size = [wid, hei, dep]
+        p3["size"] = size        
+        p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += 5
+        pos1[1] += -42.5
+        pos1[2] += 0
+        p3["pos"] = pos1
+        oobb_base.append_full(thing,**p3)
 
     #add bar
     if True:
