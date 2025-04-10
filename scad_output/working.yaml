@@ -1,9 +1,9 @@
 parts:
-  base_4_width_6_height_3_mm_depth:
+  base_5_width_4_height_3_mm_depth:
     classification: project
     color: oomlout_computer_holder_jamboard_webex_r
     description_extra: ''
-    description_main: base_4_width_6_height_3_mm_depth
+    description_main: base_5_width_4_height_3_mm_depth
     full_rotations:
     - 0
     - 0
@@ -12,18 +12,18 @@ parts:
     - 0
     - 0
     - 0
-    id: project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_4_width_6_height_3_mm_depth
-    id_oobb: oobb_part_oomlout_computer_holder_jamboard_webex_r_base_4_width_6_height_3_mm_depth
+    id: project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_5_width_4_height_3_mm_depth
+    id_oobb: oobb_part_oomlout_computer_holder_jamboard_webex_r_base_5_width_4_height_3_mm_depth
     kwargs:
       filter: ''
-      height: 6
+      height: 4
       modes:
       - 3dpr
       navigation: false
       oomp_classification: project
       oomp_color: oomlout_computer_holder_jamboard_webex_r
       oomp_description_extra: ''
-      oomp_description_main: base_4_width_6_height_3_mm_depth
+      oomp_description_main: base_5_width_4_height_3_mm_depth
       oomp_manufacturer: ''
       oomp_mode: project
       oomp_part_number: ''
@@ -33,7 +33,7 @@ parts:
       overwrite: true
       thickness: 3
       type: oomlout_computer_holder_jamboard_webex_r_base
-      width: 4
+      width: 5
     manufacturer: ''
     name: base
     part_number: ''

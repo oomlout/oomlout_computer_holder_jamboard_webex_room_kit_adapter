@@ -391,11 +391,11 @@ hardware_screw_countersunk_m3_black_6_mm_length_hex_head:
   webpage_manufacturer_metalmate: https://www.harclob2b.com/m3-x-6-socket-csk-screw-gr10-9-self-colour-din-799-1151m390006
   weight: '0.358'
   weight_10: '3.58'
-project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_4_width_6_height_3_mm_depth:
+project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_5_width_4_height_3_mm_depth:
   classification: project
   color: oomlout_computer_holder_jamboard_webex_r
   description_extra: ''
-  description_main: base_4_width_6_height_3_mm_depth
+  description_main: base_5_width_4_height_3_mm_depth
   full_rotations:
   - 0
   - 0
@@ -404,18 +404,18 @@ project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_4_width_6_h
   - 0
   - 0
   - 0
-  id: project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_4_width_6_height_3_mm_depth
-  id_oobb: oobb_part_oomlout_computer_holder_jamboard_webex_r_base_4_width_6_height_3_mm_depth
+  id: project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_5_width_4_height_3_mm_depth
+  id_oobb: oobb_part_oomlout_computer_holder_jamboard_webex_r_base_5_width_4_height_3_mm_depth
   kwargs:
     filter: ''
-    height: 6
+    height: 4
     modes:
     - 3dpr
     navigation: true
     oomp_classification: project
     oomp_color: oomlout_computer_holder_jamboard_webex_r
     oomp_description_extra: ''
-    oomp_description_main: base_4_width_6_height_3_mm_depth
+    oomp_description_main: base_5_width_4_height_3_mm_depth
     oomp_manufacturer: ''
     oomp_mode: project
     oomp_part_number: ''
@@ -426,7 +426,7 @@ project_github_oomlout_oomlout_computer_holder_jamboard_webex_r_base_4_width_6_h
     thickness: 3
     typ: all
     type: oomlout_computer_holder_jamboard_webex_r_base
-    width: 4
+    width: 5
   manufacturer: ''
   name: base
   part_number: ''
