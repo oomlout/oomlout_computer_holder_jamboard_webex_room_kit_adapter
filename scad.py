@@ -190,10 +190,10 @@ def get_base(thing, **kwargs):
         p3["shape"] = f"oobb_cylinder"
         p3["depth"] = depth
         p3["m"] = "#"
-        p3["radius"] = 15
+        p3["radius"] = 12.5
         pos1 = copy.deepcopy(pos)         
-        pos1[0] += 15/2
-        pos1[1] += 15/2
+        pos1[0] += 10
+        pos1[1] += 10
         pos1[2] += depth/2
         p3["pos"] = pos1
         oobb_base.append_full(thing,**p3)
@@ -202,7 +202,7 @@ def get_base(thing, **kwargs):
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "negative"
         p3["shape"] = f"oobb_cube"
-        wid = 30
+        wid = 25
         hei = 90
         dep = depth
         size = [wid, hei, dep]
@@ -210,20 +210,20 @@ def get_base(thing, **kwargs):
         p3["depth"] = dep
         p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
-        pos1[0] += 15/2
-        pos1[1] += -37.5
+        pos1[0] += 10
+        pos1[1] += -35
         pos1[2] += 0
         p3["pos"] = pos1
         oobb_base.append_full(thing,**p3)
 
         p4 = copy.deepcopy(p3)
         rot1 = copy.deepcopy(rot)
-        rot1[2] += 342.5
+        rot1[2] += 340
         p4["rot"] = rot1
         p4["m"] = "#"
         pos1 = copy.deepcopy(pos)
-        pos1[0] += -19.6
-        pos1[1] += -33.5
+        pos1[0] += -21
+        pos1[1] += -30
         pos1[2] += 0
         p4["pos"] = pos1
         oobb_base.append_full(thing,**p4)
@@ -263,6 +263,22 @@ def get_base(thing, **kwargs):
         oobb_base.append_full(thing,**p3)
 
 
+        #front cube
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = f"oobb_cube"
+        wid = 7
+        hei = 94
+        dep = depth
+        size = [wid, hei, dep]
+        p3["size"] = size
+        p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += 29.5
+        pos1[1] += 75
+        pos1[2] += 0
+        p3["pos"] = pos1        
+        oobb_base.append_full(thing,**p3)
 
 
     if prepare_print:
