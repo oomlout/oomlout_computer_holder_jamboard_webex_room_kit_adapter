@@ -19,7 +19,7 @@ parts:
       height: 4
       modes:
       - 3dpr
-      navigation: false
+      navigation: true
       oomp_classification: project
       oomp_color: oomlout_computer_holder_jamboard_webex_r
       oomp_description_extra: ''
@@ -27,11 +27,12 @@ parts:
       oomp_manufacturer: ''
       oomp_mode: project
       oomp_part_number: ''
-      oomp_run: false
+      oomp_run: true
       oomp_size: oomlout
       oomp_type: github
       overwrite: true
       thickness: 3
+      typ: all
       type: oomlout_computer_holder_jamboard_webex_r_base
       width: 5
     manufacturer: ''
