@@ -95,7 +95,7 @@ thing:
         pos:
         - -7.5
         - -82.5
-        - 1.5
+        - 0
         shape: cube
         size:
         - 30
@@ -109,7 +109,7 @@ thing:
         pos:
         - -34.6
         - -78.5
-        - 1.5
+        - 0
         rot:
         - 0
         - 0
@@ -223,7 +223,7 @@ thing:
     pos:
     - 7.5
     - -37.5
-    - 1.5
+    - 0
     save_type: none
     shape: oobb_cube
     size:
@@ -254,7 +254,7 @@ thing:
     pos:
     - -19.6
     - -33.5
-    - 1.5
+    - 0
     rot:
     - 0
     - 0
@@ -331,8 +331,8 @@ thing:
   components_string:
   - oobb_plate_shape_positive_type_3_depth_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color
   - oobb_cylinder_shape_negative_type_3_depth_7.5_7.5_1.5_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_15_radius
-  - oobb_cube_shape_negative_type_3_depth_7.5_-37.5_1.5_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_30_90_3_size
-  - oobb_cube_shape_negative_type_3_depth_-19.6_-33.5_1.5_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_30_90_3_size_0_0_342.5_rot
+  - oobb_cube_shape_negative_type_3_depth_7.5_-37.5_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_30_90_3_size
+  - oobb_cube_shape_negative_type_3_depth_-19.6_-33.5_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_30_90_3_size_0_0_342.5_rot
   - oobb_cube_shape_negative_type_-16_75_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_100_85_3_size
   - oobb_cube_shape_negative_type_22.5_75_0_pos_none_save_type_false_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_false_oomp_run_4_width_6_height_3_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_7.5_100_3_size
   description: oomlout computer holder jamboard webex r base 4x6x3
