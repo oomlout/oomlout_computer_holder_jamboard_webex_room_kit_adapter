@@ -120,9 +120,9 @@ def make_scad(**kwargs):
         
         part = copy.deepcopy(part_default)
         p3 = copy.deepcopy(kwargs)
-        p3["width"] = 3
-        p3["height"] = 3
-        #p3["thickness"] = 6
+        p3["width"] = 4
+        p3["height"] = 6
+        p3["thickness"] = 3
         #p3["extra"] = ""
         part["kwargs"] = p3
         nam = "base"
@@ -131,7 +131,7 @@ def make_scad(**kwargs):
             p3["oomp_size"] = nam
         if not test:
             pass
-            #parts.append(part)
+            parts.append(part)
 
 
     kwargs["parts"] = parts
@@ -181,7 +181,89 @@ def get_base(thing, **kwargs):
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1
-    oobb_base.append_full(thing,**p3)
+    #oobb_base.append_full(thing,**p3)
+
+    #add jamboard
+    if True:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = f"oobb_cylinder"
+        p3["depth"] = depth
+        p3["m"] = "#"
+        p3["radius"] = 15
+        pos1 = copy.deepcopy(pos)         
+        pos1[0] += 15/2
+        pos1[1] += 15/2
+        pos1[2] += depth/2
+        p3["pos"] = pos1
+        oobb_base.append_full(thing,**p3)
+
+        #cube 30 x 90 x depth
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = f"oobb_cube"
+        wid = 30
+        hei = 90
+        dep = depth
+        size = [wid, hei, dep]
+        p3["size"] = size
+        p3["depth"] = dep
+        p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += 15/2
+        pos1[1] += -37.5
+        pos1[2] += 0
+        p3["pos"] = pos1
+        oobb_base.append_full(thing,**p3)
+
+        p4 = copy.deepcopy(p3)
+        rot1 = copy.deepcopy(rot)
+        rot1[2] += 342.5
+        p4["rot"] = rot1
+        p4["m"] = "#"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += -19.6
+        pos1[1] += -33.5
+        pos1[2] += 0
+        p4["pos"] = pos1
+        oobb_base.append_full(thing,**p4)
+
+    #add bar
+    if True:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = f"oobb_cube"
+        wid = 100
+        hei = 85
+        dep = depth
+        size = [wid, hei, dep]
+        p3["size"] = size        
+        p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += -16
+        pos1[1] += 75
+        pos1[2] += 0
+        p3["pos"] = pos1
+        oobb_base.append_full(thing,**p3)
+
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = f"oobb_cube"
+        wid = 7.5
+        hei = 100
+        dep = depth
+        size = [wid, hei, dep]
+        p3["size"] = size
+        p3["m"] = "#"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += 22.5
+        pos1[1] += 75
+        pos1[2] += 0
+        p3["pos"] = pos1
+        oobb_base.append_full(thing,**p3)
+
+
+
 
     if prepare_print:
         #put into a rotation object
