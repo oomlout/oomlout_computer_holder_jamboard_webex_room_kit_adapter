@@ -185,9 +185,9 @@ def get_base(thing, **kwargs):
     locs.append([1, 1])
     #locs.append([2, 1])
     locs.append([1,2])
-    locs.append([2,2])
+    #locs.append([2,2])
     locs.append([1,3])
-    locs.append([2,3])
+    #locs.append([2,3])
     p3["locations"] = locs
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
@@ -334,12 +334,13 @@ def get_base(thing, **kwargs):
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "negative"
         p3["shape"] = f"oobb_screw_countersunk"
-        p3["depth"] = 12
+        p3["depth"] = 25
+        p3["clearance"] = "top"
         p3["m"] = "#"
         p3["radius_name"] = "m3"
         pos1 = copy.deepcopy(pos)         
-        pos1[0] += 0
-        pos1[1] += 7.5
+        pos1[0] += -15
+        pos1[1] += -4
         pos1[2] += depth/2
         p3["pos"] = pos1
         rot1 = copy.deepcopy(rot)
