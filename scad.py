@@ -200,7 +200,7 @@ def get_base(thing, **kwargs):
         p3["type"] = "negative"
         p3["shape"] = f"oobb_cylinder"
         p3["depth"] = depth
-        p3["m"] = "#"
+        #p3["m"] = "#"
         p3["radius"] = 12.5
         pos1 = copy.deepcopy(pos)         
         pos1[0] += 17.5
@@ -219,7 +219,7 @@ def get_base(thing, **kwargs):
         size = [wid, hei, dep]
         p3["size"] = size
         p3["depth"] = dep
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
         pos1[0] += 12.5
         pos1[1] += -50
@@ -235,7 +235,7 @@ def get_base(thing, **kwargs):
         dep = depth
         size = [wid, hei, dep]
         p3["size"] = size        
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
         pos1[0] += 6.225
         pos1[1] += -43.75
@@ -252,7 +252,7 @@ def get_base(thing, **kwargs):
         dep = depth
         size = [wid, hei, dep]
         p3["size"] = size        
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
         pos1[0] += 5
         pos1[1] += -42.5
@@ -270,7 +270,7 @@ def get_base(thing, **kwargs):
         dep = depth
         size = [wid, hei, dep]
         p3["size"] = size        
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
         pos1[0] += -8.5
         pos1[1] += 60
@@ -286,7 +286,7 @@ def get_base(thing, **kwargs):
         dep = depth
         size = [wid, hei, dep]
         p3["size"] = size
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
         pos1[0] += 30
         pos1[1] += 60
@@ -304,7 +304,7 @@ def get_base(thing, **kwargs):
         dep = depth
         size = [wid, hei, dep]
         p3["size"] = size
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
         pos1[0] += 37
         pos1[1] += 60
@@ -317,18 +317,37 @@ def get_base(thing, **kwargs):
         p3["type"] = "negative"
         p3["shape"] = f"oobb_cube"
         wid = 4
-        hei = 4
+        hei = 8
         dep = depth
         size = [wid, hei, dep]
         p3["size"] = size
-        p3["m"] = "#"
+        #p3["m"] = "#"
         pos1 = copy.deepcopy(pos)
         pos1[0] += 24.5
-        pos1[1] += 15.6
+        pos1[1] += 13.6
         pos1[2] += 0
         p3["pos"] = pos1
         oobb_base.append_full(thing,**p3)
-        
+
+    #add screw
+    if True:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = f"oobb_screw_countersunk"
+        p3["depth"] = 12
+        p3["m"] = "#"
+        p3["radius_name"] = "m3"
+        pos1 = copy.deepcopy(pos)         
+        pos1[0] += 0
+        pos1[1] += 7.5
+        pos1[2] += depth/2
+        p3["pos"] = pos1
+        rot1 = copy.deepcopy(rot)
+        rot1[0] += 90
+        rot1[1] += 0
+        rot1[2] += 0
+        p3["rot"] = rot1
+        oobb_base.append_full(thing,**p3)  
 
     if prepare_print:
         #put into a rotation object

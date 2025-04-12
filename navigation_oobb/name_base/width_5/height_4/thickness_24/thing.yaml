@@ -194,7 +194,6 @@ thing:
       h: 24
       height: 4
       inclusion: laser
-      m: '#'
       pos: &id006
       - 17.5
       - -5
@@ -208,7 +207,6 @@ thing:
       h: 24
       height: 4
       inclusion: 3dpr
-      m: '#'
       pos: *id006
       r: 12.5
       shape: cylinder
@@ -218,7 +216,6 @@ thing:
       h: 24
       height: 4
       inclusion: 'true'
-      m: '#'
       pos: *id006
       r: 12.5
       radius: 12.5
@@ -227,7 +224,6 @@ thing:
       width: 5
   - - - depth: 24
         height: 4
-        m: '#'
         pos:
         - -5.0
         - -95.0
@@ -240,7 +236,6 @@ thing:
         type: negative
         width: 5
   - - - height: 4
-        m: '#'
         pos:
         - -5.0
         - -95.0
@@ -253,7 +248,6 @@ thing:
         type: negative
         width: 5
   - - - height: 4
-        m: '#'
         pos:
         - -20.0
         - -72.5
@@ -266,7 +260,6 @@ thing:
         type: negative
         width: 5
   - - - height: 4
-        m: '#'
         pos:
         - -58.5
         - 17.5
@@ -279,7 +272,6 @@ thing:
         type: negative
         width: 5
   - - - height: 4
-        m: '#'
         pos:
         - 26.25
         - 10.0
@@ -292,7 +284,6 @@ thing:
         type: negative
         width: 5
   - - - height: 4
-        m: '#'
         pos:
         - 33.5
         - 13.0
@@ -305,18 +296,175 @@ thing:
         type: negative
         width: 5
   - - - height: 4
-        m: '#'
         pos:
         - 22.5
-        - 13.6
+        - 9.6
         - 0
         shape: cube
         size:
         - 4
-        - 4
+        - 8
         - 24
         type: negative
         width: 5
+  - - objects:
+      - - depth: 12
+          h: 1.7
+          height: 4
+          inclusion: laser
+          m: '#'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.4
+          shape: cylinder
+          type: positive
+          width: 5
+      - - depth: 12
+          h: 12
+          height: 4
+          inclusion: laser
+          m: '#'
+          pos: &id007
+          - 0
+          - 0
+          - -12.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 5
+        - depth: 12
+          h: 12
+          height: 4
+          inclusion: 3dpr
+          m: '#'
+          pos: *id007
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 5
+        - depth: 12
+          h: 12
+          height: 4
+          inclusion: 'true'
+          m: '#'
+          pos: *id007
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 5
+      - - depth: 12
+          h: 1.9
+          height: 4
+          inclusion: 3dpr
+          m: '#'
+          pos:
+          - 0
+          - 0
+          - -1.9
+          r1: 1.8
+          r2: 3.6
+          shape: cylinder
+          type: positive
+          width: 5
+      - - depth: 12
+          h: 12
+          height: 4
+          inclusion: laser
+          m: '#'
+          pos: &id008
+          - 0
+          - 0
+          - -12.0
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 5
+        - depth: 12
+          h: 12
+          height: 4
+          inclusion: 3dpr
+          m: '#'
+          pos: *id008
+          r: 1.8
+          shape: cylinder
+          type: positive
+          width: 5
+        - depth: 12
+          h: 12
+          height: 4
+          inclusion: 'true'
+          m: '#'
+          pos: *id008
+          r: 1.8
+          radius: 1.8
+          shape: cylinder
+          type: positive
+          width: 5
+      - - depth: 12
+          h: 1.7
+          height: 4
+          inclusion: 'true'
+          m: '#'
+          pos:
+          - 0
+          - 0
+          - -1.7
+          r1: 1.5
+          r2: 2.9
+          shape: cylinder
+          type: positive
+          width: 5
+      - - depth: 12
+          h: 12
+          height: 4
+          inclusion: laser
+          m: '#'
+          pos: &id009
+          - 0
+          - 0
+          - -12.0
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 5
+        - depth: 12
+          h: 12
+          height: 4
+          inclusion: 3dpr
+          m: '#'
+          pos: *id009
+          r: 1.5
+          shape: cylinder
+          type: positive
+          width: 5
+        - depth: 12
+          h: 12
+          height: 4
+          inclusion: 'true'
+          m: '#'
+          pos: *id009
+          r: 1.5
+          radius: 1.5
+          shape: cylinder
+          type: positive
+          width: 5
+      pos:
+      - 0
+      - 7.5
+      - 12.0
+      rot:
+      - 90
+      - 0
+      - 0
+      type: rotation
+      typetype: negative
   components_objects:
   - depth: 24
     filter: ''
@@ -388,7 +536,6 @@ thing:
   - depth: 24
     filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -417,7 +564,6 @@ thing:
   - depth: 24
     filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -448,7 +594,6 @@ thing:
     width: 5
   - filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -479,7 +624,6 @@ thing:
     width: 5
   - filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -510,7 +654,6 @@ thing:
     width: 5
   - filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -541,7 +684,6 @@ thing:
     width: 5
   - filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -572,7 +714,6 @@ thing:
     width: 5
   - filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -603,7 +744,6 @@ thing:
     width: 5
   - filter: ''
     height: 4
-    m: '#'
     modes:
     - 3dpr
     navigation: true
@@ -620,14 +760,47 @@ thing:
     overwrite: true
     pos:
     - 24.5
-    - 15.6
+    - 13.6
     - 0
     save_type: all
     shape: oobb_cube
     size:
     - 4
-    - 4
+    - 8
     - 24
+    thickness: 24
+    typ: all
+    type: negative
+    width: 5
+  - depth: 12
+    filter: ''
+    height: 4
+    m: '#'
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: oomlout_computer_holder_jamboard_webex_r
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 7.5
+    - 12.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_screw_countersunk
     thickness: 24
     typ: all
     type: negative
@@ -642,7 +815,8 @@ thing:
   - oobb_cube_shape_negative_type_-8.5_60_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_5_width_4_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_100_85_24_size
   - oobb_cube_shape_negative_type_30_60_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_5_width_4_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_7.5_100_24_size
   - oobb_cube_shape_negative_type_37_60_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_5_width_4_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_7_94_24_size
-  - oobb_cube_shape_negative_type_24.5_15.6_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_5_width_4_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_4_4_24_size
+  - oobb_cube_shape_negative_type_24.5_13.6_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_5_width_4_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_4_8_24_size
+  - oobb_screw_countersunk_shape_negative_type_m3_radius_name_12_depth_0_7.5_12.0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_5_width_4_height_24_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_oomlout_computer_holder_jamboard_webex_r_oomp_color_90_0_0_rot
   description: oomlout computer holder jamboard webex r base 5x4x24
   description_extra: ''
   description_main: 5_width_4_height_24_mm_depth
