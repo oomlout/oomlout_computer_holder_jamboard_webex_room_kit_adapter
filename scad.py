@@ -340,7 +340,7 @@ def get_base(thing, **kwargs):
         p3["radius_name"] = "m3"
         pos1 = copy.deepcopy(pos)         
         pos1[0] += -15
-        pos1[1] += -4
+        pos1[1] += -2
         pos1[2] += depth/2
         p3["pos"] = pos1
         rot1 = copy.deepcopy(rot)
